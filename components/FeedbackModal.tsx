@@ -93,7 +93,7 @@ export default function FeedbackModal({ tool, onClose }: Props) {
                   <p className="text-sm text-gray-600 mb-1">What task were you trying to do?</p>
                   <input value={useCase} onChange={e => setUseCase(e.target.value)}
                     placeholder="e.g. Write product descriptions for my store"
-                    className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-purple-400" />
+                    className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2.5 focus:outline-none focus:ring-2 focus:ring-purple-400 text-black placeholder-black" />
                 </div>
                 <button onClick={() => setStep(3)} disabled={!rating || solved === null}
                   className="w-full bg-purple-600 text-white py-2.5 rounded-lg text-sm font-medium disabled:opacity-40 hover:bg-purple-700 transition">
