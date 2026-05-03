@@ -109,13 +109,13 @@ export default function FeedbackModal({ tool, onClose }: Props) {
                   <p className="text-sm text-gray-600 mb-1">What worked well?</p>
                   <textarea value={whatWorked} onChange={e => setWhatWorked(e.target.value)}
                     placeholder="e.g. Output quality was great, very fast..."
-                    className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2.5 h-20 resize-none focus:outline-none focus:ring-2 focus:ring-purple-400" />
+                    className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2.5 h-20 resize-none focus:outline-none focus:ring-2 focus:ring-purple-400 text-black placeholder-black" />
                 </div>
                 <div>
                   <p className="text-sm text-gray-600 mb-1">What could be better?</p>
                   <textarea value={whatFailed} onChange={e => setWhatFailed(e.target.value)}
                     placeholder="e.g. Struggled with long-form content..."
-                    className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2.5 h-20 resize-none focus:outline-none focus:ring-2 focus:ring-purple-400" />
+                    className="w-full text-sm border border-gray-200 rounded-lg px-3 py-2.5 h-20 resize-none focus:outline-none focus:ring-2 focus:ring-purple-400 text-black placeholder-black" />
                 </div>
                 <button onClick={submit}
                   className="w-full bg-purple-600 text-white py-2.5 rounded-lg text-sm font-medium hover:bg-purple-700 transition">

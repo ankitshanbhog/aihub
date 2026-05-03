@@ -43,7 +43,7 @@ export default function ProblemMatcher({ onMatch }: Props) {
           onChange={e => setProblem(e.target.value)}
           onKeyDown={e => e.key === "Enter" && match()}
           placeholder="e.g. I need to write 10 product descriptions fast..."
-          className="flex-1 text-sm border border-purple-200 rounded-lg px-4 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-purple-400"
+          className="flex-1 text-sm border border-purple-200 rounded-lg px-4 py-2.5 bg-white focus:outline-none focus:ring-2 focus:ring-purple-400 text-black placeholder-black"
         />
         <button onClick={match} disabled={loading}
           className="bg-purple-600 text-white text-sm px-5 py-2.5 rounded-lg hover:bg-purple-700 disabled:opacity-50 transition font-medium">
